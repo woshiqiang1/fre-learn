@@ -164,7 +164,7 @@ const reconcileChildren = (WIP: IFiber, children: FreNode): void => {
       newFiber.op = Flag.PLACE
     }
 
-    newFiber[k] = newFiber
+    newFibers[k] = newFiber
     newFiber.parent = WIP
 
     if(prevFiber) {

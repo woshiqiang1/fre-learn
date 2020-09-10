@@ -51,7 +51,7 @@ export const useEffect = (cb: EffectCallback, deps?: DependencyList): void => {
 }
 
 export const useLayout = (cb: EffectCallback, deps?: DependencyList): void => {
-  return effectImpl(cb, deps, 'layout')
+  return effectImpl(cb, deps!, 'layout')
 }
 
 const effectImpl = (
